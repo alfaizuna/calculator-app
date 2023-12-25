@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+</head>
+<body>
+
+<h1>Simple Calculator</h1>
+
+<form action="/calculate" method="post">
+    <label for="num1">Number 1:</label>
+    <input type="number" name="num1" required>
+
+    <label for="operator">Operator:</label>
+    <select name="operator" required>
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+    </select>
+
+    <label for="num2">Number 2:</label>
+    <input type="number" name="num2" required>
+
+    <button type="submit">Calculate</button>
+</form>
+
+</body>
+</html>
